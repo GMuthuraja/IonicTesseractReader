@@ -1,14 +1,23 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Tesseract Reader
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-button expand="block" fill="solid" (click)="selectSource()">Select Image</ion-button>
+  <!-- <ion-button expand="fill" fill="block" (click)="recognizeImage()" [disabled]="!selectedImage">Recognize Image</ion-button> -->
+
+  <!-- <ion-img [src]="selectedImage" *ngIf="selectedImage"></ion-img> -->
+
+  <!-- <ion-card *ngIf="imageText">
+    <ion-card-header>
+      Image Text
+    </ion-card-header>
+    <ion-card-content>
+      {{ imageText }}
+    </ion-card-content>
+  </ion-card> -->
 </ion-content>
